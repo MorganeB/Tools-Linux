@@ -1,0 +1,46 @@
+
+Get a file : 
+scp -p user_name@myserver:/myserver/tmp/fullreplication.tar . 
+
+
+Send a file : 
+scp -p $PATH_FILE user@$DEST_HOST:$PATH_DEST
+
+
+Send a file by email : 
+uuencode </path/to/file/to/send> <filename> | mail -s "subject" morgane.bardet@clearstream.com 
+
+
+Send the content of the file in an email : 
+mail -s "Mail subject" morgane@xxx.com < myfile.dat
+
+Send a basic email : 
+echo -e "OK" | mail -s "Task is finished" morgane@xxx.com 
+
+
+Sort all files and dir according to size
+du -sk * | sort -n    
+
+
+df -kP | sort -nk 5
+df -kP | sort -nk 5 | tail -8 | awk '{ printf ("%5s\t%s\n", $5, $6)'}
+
+
+In Vi, count occurrences of a word : 
+:%s/the/&/gn 
+
+Crontasks : 
+Runs every 2 min : */2 * * * * ksh -x /tmp/check.sh 
+Runs every 15min from Monday to Friday 07:00-18:00 : */15 7-18 * * 1-5 ksh -x /${HOME}/check.sh 
+
+
+Grep a string recursively into files / dir
+find . -type f -print | xargs grep dm
+
+Delete files older than 1 week 
+find . -mtime +7 -type f -exec rm -rf  {} \;
+
+
+
+
+
