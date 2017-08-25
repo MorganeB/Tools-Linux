@@ -1,0 +1,40 @@
+
+http://192.168.1.20/shutterControl?params=[PIN_ARDUINO]:0
+
+Descente du volet du salon :
+http://192.168.1.20/shutterControl?params=6:0
+
+PIN Arduino -> Relay ID -> Bouton télécommande
+
+
+
+Télécommande 1 (Cuisine)
+
+0 -> 1 -> Montée
+19 (A5) -> 15 -> Stop
+2 -> 3 -> Descente
+
+Télécommande 2 (Salon)
+
+3 -> 4
+5 -> 5
+6 -> 6
+
+Télécommande 3 (Salle à manger)
+
+7 -> 7
+8 -> 8
+9 -> 9
+
+Télécommande 4 (Chambre 1)
+
+14 (A0) -> 10
+15 (A1) -> 11
+16 (A2) -> 12
+
+Télécommande 5 (Chambre 2)
+
+17 (A3) -> 13
+18 (A4) -> 14
+
+	
